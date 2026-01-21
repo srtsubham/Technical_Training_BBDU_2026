@@ -1,17 +1,263 @@
-class Laptop:
-    def __init__(self, brand, ram):
-        self.brand = brand
-        self.ram = ram
+# Format the current date and time
+import datetime
 
-    def display(self):
-        print(f"Brand: {self.brand}, RAM: {self.ram}")
+a = datetime.datetime.now()
+b = a.strftime("%Y-%m-%d %H:%M:%S")
+print(b)
 
 
-l1 = Laptop("Dell", "16GB")
-l2 = Laptop("HP", "8GB")
+# # Display the current year, month and day separately
+# import datetime
 
-l1.display()
-l2.display()
+# a = datetime.date.today()
+# print(a.year)
+# print(a.month)
+# print(a.day)
+
+
+# # Display only current date in YYYY-MM-DD format
+# import datetime
+
+# a = datetime.date.today()
+# print(a)
+
+
+# # Write a program to print the current date and time using the datetime module
+# import datetitme
+# a = datetime.datetime.now()
+# print(a)
+
+# import random
+# import string
+
+# a = string.ascii_lowercase
+# b = ""
+# for i in range(8):
+#     b = b + random.choice(a)
+# print(b)
+
+# # Create a random password of 8 characters using lowercase alphabets
+# import random
+# import string
+# a = string.ascii_lowercase
+# b = ""
+# for i in range(8):
+#     b = b + random.choice(a)
+# print(b)
+
+
+# # Generate a random number between 1 and 10
+# import random
+
+# a = random.randint(1, 10)
+# print(a)
+
+# # Generate a random floating-point number between 0 and 1
+# import random
+
+# a = random.random()
+# print(a)
+
+# # Choose a random item from the list [10, 20, 30, 40, 50]
+# import random
+
+# a = [10, 20, 30, 40, 50]
+# b = random.choice(a)
+# print(b)
+
+# # Shuffle the list [1, 2, 3, 4, 5] randomly
+# import random
+
+# a = [1, 2, 3, 4, 5]
+# random.shuffle(a)
+# print(a)
+
+# # Generate a random even number between 2 and 20
+# import random
+
+# a = random.randrange(2, 21, 2)
+# print(a)
+
+# # Generate 5 random integers between 10 and 100
+# import random
+
+# a = random.sample(range(10, 101), 5)
+# print(a)
+
+# # Simulate rolling a dice (1 to 6)
+# import random
+
+# a = random.randint(1, 6)
+# print(a)
+
+# # Pick 3 random fruits from the list ['apple', 'banana', 'mango', 'grape', 'orange']
+# import random
+
+# a = ["apple", "banana", "mango", "grape", "orange"]
+# b = random.sample(a, 3)
+# print(b)
+
+
+# # Convert 180 degrees into radians
+# import math
+
+# a = 180
+# b = math.radians(a)
+# print(b)
+
+
+# # Find the logarithm base 10 of 1000
+# import math
+
+# a = 1000
+# b = math.log10(a)
+# print(b)
+
+
+# # Find the value of e raised to the power 3
+# import math
+
+# a = 3
+# b = math.exp(a)
+# print(b)
+
+
+# # Find the greatest common divisor (GCD) of 36 and 60
+# import math
+
+# a = 36
+# b = 60
+# c = math.gcd(a, b)
+# print(c)
+
+
+# # Find the sine, cosine, and tangent of 90 degrees
+# import math
+
+# a = 90
+# b = math.radians(a)
+# c = math.sin(b)
+# d = math.cos(b)
+# e = math.tan(b)
+# print(c)
+# print(d)
+# print(e)
+
+
+# # Find the absolute value of -18 using math.fabs()
+# import math
+
+# a = -18
+# b = math.fabs(a)
+# print(b)
+
+
+# # Compute 5 raised to the power 3 using the math module
+# import math
+
+# a = 5
+# b = 3
+# c = math.pow(a, b)
+# print(c)
+
+
+# # Find the floor and ceiling values of 4.7
+# import math
+
+# a = 4.7
+# b = math.floor(a)
+# c = math.ceil(a)
+# print(b)
+# print(c)
+
+
+# # Calculate factorial of 6.
+# import math
+
+# a = 6
+# b = math.factorial(a)
+# print(b)
+
+
+# Find the square root of 625.
+
+# a = 625
+# b = math.sqrt(a)
+# print(b)
+
+
+# # Create two parent classes Teacher and Student, then a TeachingAssistant using multiple inheritance
+# class Teacher:
+#     def show(self):
+#         print("I am a Teacher")
+
+# class Student:
+#     def show1(self):
+#         print("I am a Student")
+
+# class TeachingAssistant(Teacher, Student):
+#     pass
+
+# t = TeachingAssistant()
+# t.show()
+# t.show1()
+
+
+# # Create classes grandfather, father, and Son to demonstrate multilevel inheritance
+# class Grandfather:
+#     def show(self):
+#         print("Grandfather")
+
+
+# class Father(Grandfather):
+#     def show1(self):
+#         print("Father")
+
+
+# class Son(Father):
+#     def show2(self):
+#         print("Son")
+
+
+# s = Son()
+# s.show()
+# s.show1()
+# s.show2()
+
+
+# # Create two classes: Vehicle (base class) with method start() and Car (derived class) with method drive()
+# class Vehicle:
+#     def start(self):
+#         print("Vehicle started")
+
+
+# class Car(Vehicle):
+#     def drive(self):
+#         print("Car is driving")
+
+
+# c = Car()
+# c.start()
+# c.drive()
+
+
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+
+# class Employee(Person):
+#     def __init__(self, name, age, salary):
+#         super().__init__(name, age)
+#         self.salary = salary
+
+#     def display(self):
+#         print(f"Name: {self.name}, Age: {self.age}, Salary: {self.salary}")
+
+
+# e_1 = Employee("John", 30, 50000)
+# e_1.display()
 
 
 # class Laptop:
